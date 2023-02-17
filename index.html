@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+        
+        <title>API Pokeapi</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo"><img src="img/pokeapi.png" alt="pokeapi"></h1>
+            <div class="filtro">
+                <div>
+                    <label for="pokedex">Pokedex: </label>
+                    <select class="filtroPokedex" id="pokedex" name="pokedex"></select>
+                </div>
+                <div>
+                    <label for="tipo">Tipo: </label>
+                    <select class="filtroTipo" id="tipo" name="tipo"></select>
+                </div>
+                <div>
+                    <label for="search">Buscar:</label>
+                    <input type="text" name="search" id="search">
+                </div>
+                <input type="button" class="botonFav" value="favoritos">
+            </div>
+        </header>
+        <div class="loading">
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            <p>Cargando pokemon....</p>
+        </div>
+        <div class="contenido"></div>
+        <div class="tarjeta">
+
+        </div>
+        <div class="fav-menu">
+            <p class="aniadirFav">Añadir a favoritos</p>
+            <p class="eliminarFav">Eliminar de favoritos</p>
+        </div>
+        <div class="paginacion">
+            <a class="prevpage" href="">Atras</a>
+            <a class="nextpage" href="">Siguiente</a>
+            <a class="prevtarget" href="">Atras</a>
+            <a class="nexttarget" href="">Siguiente</a>
+        </div>
+        <script src="js/cagarFavoritos.js"></script>
+        <script src="js/cadenaEvolucion.js"></script>
+        <script src="js/cargaPokemon.js"></script>
+        <script src="js/datosPokemon.js"></script>
+        <script src="js/filtroTipo.js"></script>
+        <script src="js/filtroPokedex.js"></script>
+        <script src="js/api.js"></script>
+    </body>
+    </body>
+</html>
